@@ -1,0 +1,19 @@
+.searchRhyme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 20px;
+  &__title {
+    font-size: 25px;
+    &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        outline: none;
+      }
+    }
+  }
+}

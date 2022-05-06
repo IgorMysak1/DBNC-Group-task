@@ -1,17 +1,12 @@
-import React, { useState } from "react";
-import { Header } from "./components/Header";
-import { ListOfWords } from "./components/ListOfWords";
+import React from "react";
+import { Task2 } from "./components/Task2";
+import { Task5 } from "./components/Task5";
+
 function App() {
-  const [inputValue, setInputValue] = useState("");
-  const [listOfRhyme, setListOfRhyme] = useState([{ word: "Start search" }]);
   return (
     <div className="App">
-      <Header
-        inputValue={inputValue}
-        setInputValue={setInputValue}
-        setListOfRhyme={setListOfRhyme}
-      />
-      <ListOfWords listOfRhyme={listOfRhyme} inputValue={inputValue} />
+      <Task2 />
+      <Task5 />
     </div>
   );
 }

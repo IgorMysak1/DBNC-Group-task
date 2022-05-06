@@ -1,0 +1,28 @@
+.enterData {
+  width: 100%;
+  &__title {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+  &__input {
+    width: 100%;
+    background: #147dd9;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    padding: 5px 10px;
+    flex-direction: row-reverse;
+    &::placeholder {
+      color: #fff;
+    }
+    &::-webkit-calendar-picker-indicator {
+      margin-right: 10px;
+      cursor: pointer;
+      background: url(../../public/img/calendar.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
